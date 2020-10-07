@@ -22,7 +22,7 @@
 		7A5658EC252D391000BA648F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5658EB252D391000BA648F /* ComplicationController.swift */; };
 		7A5658EE252D391300BA648F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5658ED252D391300BA648F /* Assets.xcassets */; };
 		7A5658F3252D391300BA648F /* ProgrammerEyesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7A5658D4252D390C00BA648F /* ProgrammerEyesWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7A56590B252D426700BA648F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56590A252D426700BA648F /* File.swift */; };
+		7A565919252D72E100BA648F /* SecondInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A565918252D72E100BA648F /* SecondInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		7A5658ED252D391300BA648F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A5658EF252D391300BA648F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A5658F0252D391300BA648F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		7A56590A252D426700BA648F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7A565918252D72E100BA648F /* SecondInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7A5658E5252D391000BA648F /* InterfaceController.swift */,
-				7A56590A252D426700BA648F /* File.swift */,
+				7A565918252D72E100BA648F /* SecondInterfaceController.swift */,
 				7A5658E7252D391000BA648F /* ExtensionDelegate.swift */,
 				7A5658E9252D391000BA648F /* NotificationController.swift */,
 				7A5658EB252D391000BA648F /* ComplicationController.swift */,
@@ -309,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A56590B252D426700BA648F /* File.swift in Sources */,
+				7A565919252D72E100BA648F /* SecondInterfaceController.swift in Sources */,
 				7A5658EA252D391000BA648F /* NotificationController.swift in Sources */,
 				7A5658EC252D391000BA648F /* ComplicationController.swift in Sources */,
 				7A5658E8252D391000BA648F /* ExtensionDelegate.swift in Sources */,

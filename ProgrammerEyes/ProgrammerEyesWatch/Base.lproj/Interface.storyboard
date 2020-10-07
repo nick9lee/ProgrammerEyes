@@ -7,38 +7,79 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
-        <!--SecondInterfaceController-->
-        <scene sceneID="CLb-fX-G3i">
+        <!--　-->
+        <scene sceneID="kJT-yn-ADI">
             <objects>
-                <controller identifier="SecondInterfaceController" id="cpN-Vl-XoL" customClass="SecondInterfaceController" customModule="ProgrammerEyesWatch_Extension"/>
+                <controller title="　" id="p6Q-ec-bTE" customClass="SecondInterfaceController" customModule="ProgrammerEyesWatch_Extension">
+                    <items>
+                        <label width="1" height="57" alignment="left" text="20:00" textAlignment="center" id="wUb-hW-o4D">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <button width="1" height="56" alignment="left" title="End work session" id="VDY-mX-hP6">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" name="Color"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <action selector="EndWorkbutton" destination="p6Q-ec-bTE" id="xe6-3e-JYh"/>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="QM3-5c-1Ja"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="30" alignment="left" textAlignment="center" id="gmx-kg-AXX"/>
+                    </items>
+                    <connections>
+                        <outlet property="lookAwayLabel" destination="gmx-kg-AXX" id="Ubs-Zz-cDX"/>
+                        <outlet property="timerLabel" destination="wUb-hW-o4D" id="0ZT-Q5-EI4"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="-135" y="314"/>
+            <point key="canvasLocation" x="-157" y="136"/>
         </scene>
-        <!--Interface Controller-->
+        <!--202020 rule-->
+        <scene sceneID="4CG-tZ-EJH">
+            <objects>
+                <controller identifier="202020 rule" id="On2-ZL-DRf">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="Every 20 minutes, look at least 20ft away, for 20 seconds." textAlignment="center" numberOfLines="0" id="cCM-73-j4a">
+                            <color key="textColor" name="AccentColor"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-173" y="514"/>
+        </scene>
+        <!--　-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ProgrammerEyesWatch" customModuleProvider="target">
+                <controller title="　" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ProgrammerEyesWatch" customModuleProvider="target">
                     <items>
-                        <button width="1" height="129" alignment="left" title="Start Work Session!" id="CQu-4E-7TL">
+                        <button width="1" height="81" alignment="left" title="Start Work Session!" id="CQu-4E-7TL">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="backgroundColor" name="AccentColor"/>
                             <fontDescription key="font" type="system" pointSize="20"/>
                             <connections>
                                 <action selector="StartWorkButtonPressed" destination="AgC-eL-Hgc" id="Hcd-vq-Vic"/>
-                                <segue destination="cpN-Vl-XoL" kind="modal" id="gWR-qU-O6H"/>
+                                <segue destination="p6Q-ec-bTE" kind="modal" id="Wlf-jA-qxZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="61" alignment="left" title="what is the 202020 rule?" id="jnT-t8-xCQ">
+                            <connections>
+                                <segue destination="On2-ZL-DRf" kind="push" id="Gqm-Yv-wrx"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="173" y="249"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Time to look away!" numberOfLines="0" id="IdU-wH-bcW">
+                            <color key="textColor" name="AccentColor"/>
+                        </label>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -67,7 +108,10 @@
     </scenes>
     <resources>
         <namedColor name="AccentColor">
-            <color red="1" green="0.80000001192092896" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.86133143440000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color">
+            <color red="0.0" green="1" blue="0.59715604550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
