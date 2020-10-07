@@ -24,6 +24,6 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func StartWorkButtonPressed() {
-        
+        print("fdsjkfdns")
     }
 }

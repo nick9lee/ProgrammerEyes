@@ -12,19 +12,21 @@
             <objects>
                 <controller title="　" id="p6Q-ec-bTE" customClass="SecondInterfaceController" customModule="ProgrammerEyesWatch_Extension">
                     <items>
-                        <label width="1" height="57" alignment="left" text="20:00" textAlignment="center" id="wUb-hW-o4D">
+                        <label width="1" height="53" alignment="left" text="20:00" textAlignment="center" id="wUb-hW-o4D">
                             <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
                         </label>
-                        <button width="1" height="56" alignment="left" title="End work session" id="VDY-mX-hP6">
+                        <button width="1" height="56" alignment="left" title="End Work Session" id="Sdo-rg-C3x">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="backgroundColor" name="Color"/>
-                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
                             <connections>
-                                <action selector="EndWorkbutton" destination="p6Q-ec-bTE" id="xe6-3e-JYh"/>
-                                <segue destination="AgC-eL-Hgc" kind="modal" id="QM3-5c-1Ja"/>
+                                <action selector="EndButtonPressed" destination="p6Q-ec-bTE" id="duS-uh-RcE"/>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="k45-ku-4jM"/>
                             </connections>
                         </button>
-                        <label width="1" height="30" alignment="left" textAlignment="center" id="gmx-kg-AXX"/>
+                        <label width="1" height="34" alignment="left" textAlignment="center" id="gmx-kg-AXX">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="lookAwayLabel" destination="gmx-kg-AXX" id="Ubs-Zz-cDX"/>
@@ -59,7 +61,7 @@
                             <fontDescription key="font" type="system" pointSize="20"/>
                             <connections>
                                 <action selector="StartWorkButtonPressed" destination="AgC-eL-Hgc" id="Hcd-vq-Vic"/>
-                                <segue destination="p6Q-ec-bTE" kind="modal" id="Wlf-jA-qxZ"/>
+                                <segue destination="p6Q-ec-bTE" kind="modal" id="H3p-lu-qAw"/>
                             </connections>
                         </button>
                         <button width="1" height="61" alignment="left" title="what is the 202020 rule?" id="jnT-t8-xCQ">
@@ -77,7 +79,7 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Time to look away!" numberOfLines="0" id="IdU-wH-bcW">
+                        <label width="1" alignment="left" text="Time to look away!" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW">
                             <color key="textColor" name="AccentColor"/>
                         </label>
                     </items>

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Programmer Eyes.png",
+      "filename" : "launchscreenProgrammerEyes.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Programmer Eyes@2x.png",
+      "filename" : "launchscreenProgrammerEyes@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Programmer Eyes@3x.png",
+      "filename" : "launchscreenProgrammerEyes@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
