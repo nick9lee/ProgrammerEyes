@@ -10,7 +10,7 @@
         <!--　-->
         <scene sceneID="kJT-yn-ADI">
             <objects>
-                <controller title="　" id="p6Q-ec-bTE" customClass="SecondInterfaceController" customModule="ProgrammerEyesWatch_Extension">
+                <controller identifier="timerScreen" title="　" id="p6Q-ec-bTE" customClass="SecondInterfaceController" customModule="ProgrammerEyesWatch_Extension">
                     <items>
                         <label width="1" height="53" alignment="left" text="20:00" textAlignment="center" id="wUb-hW-o4D">
                             <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
@@ -21,7 +21,6 @@
                             <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
                             <connections>
                                 <action selector="EndButtonPressed" destination="p6Q-ec-bTE" id="duS-uh-RcE"/>
-                                <segue destination="AgC-eL-Hgc" kind="modal" id="k45-ku-4jM"/>
                             </connections>
                         </button>
                         <label width="1" height="34" alignment="left" textAlignment="center" id="gmx-kg-AXX">
@@ -34,7 +33,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-157" y="136"/>
+            <point key="canvasLocation" x="-184" y="234"/>
         </scene>
         <!--202020 rule-->
         <scene sceneID="4CG-tZ-EJH">
@@ -48,20 +47,19 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-173" y="514"/>
+            <point key="canvasLocation" x="-201" y="593"/>
         </scene>
         <!--　-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="　" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ProgrammerEyesWatch" customModuleProvider="target">
+                <controller identifier="startScreen" title="　" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ProgrammerEyesWatch" customModuleProvider="target">
                     <items>
                         <button width="1" height="81" alignment="left" title="Start Work Session!" id="CQu-4E-7TL">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="backgroundColor" name="AccentColor"/>
                             <fontDescription key="font" type="system" pointSize="20"/>
                             <connections>
-                                <action selector="StartWorkButtonPressed" destination="AgC-eL-Hgc" id="Hcd-vq-Vic"/>
-                                <segue destination="p6Q-ec-bTE" kind="modal" id="H3p-lu-qAw"/>
+                                <action selector="StartButtonTapped" destination="AgC-eL-Hgc" id="yo4-xc-nzx"/>
                             </connections>
                         </button>
                         <button width="1" height="61" alignment="left" title="what is the 202020 rule?" id="jnT-t8-xCQ">
@@ -70,6 +68,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="startButton" destination="CQu-4E-7TL" id="2hq-aQ-sNt"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="173" y="249"/>
@@ -86,34 +87,18 @@
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ProgrammerEyesWatch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="ProgrammerEyesWatch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="173" y="593"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
-            <color red="1" green="0.86133143440000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.86100000143051147" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color">
-            <color red="0.0" green="1" blue="0.59715604550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="1" blue="0.59700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

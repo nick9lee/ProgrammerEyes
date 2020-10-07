@@ -1,9 +1,9 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
-            "title": "Optional title",
-            "subtitle": "Optional subtitle"
+            "body": "Time to look away!",
+            "title": "",
+            "subtitle": ""
         },
         "category": "myCategory",
         "thread-id": "5280"

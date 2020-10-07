@@ -11,6 +11,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var startButton: WKInterfaceButton!
+    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
     }
@@ -23,7 +25,9 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
-    @IBAction func StartWorkButtonPressed() {
-        print("fdsjkfdns")
+    @IBAction func StartButtonTapped(){
+        self.presentController(withName: "timerScreen", context: nil)
+        
+        
     }
 }
