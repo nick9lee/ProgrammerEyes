@@ -7,7 +7,7 @@
 
 import WatchKit
 import Foundation
-
+import UserNotifications
 
 class InterfaceController: WKInterfaceController {
 
@@ -19,6 +19,10 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        let center  = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            //if user doesnt allow notifications maybe say something, otherwause granted will be true
+        }
     }
     
     override func didDeactivate() {
@@ -27,7 +31,6 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func StartButtonTapped(){
         self.presentController(withName: "timerScreen", context: nil)
-        
         
     }
 }

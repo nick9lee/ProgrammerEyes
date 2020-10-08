@@ -18,7 +18,7 @@ class SecondInterfaceController: WKInterfaceController {
         }
     }
     /************************/
-    var timePassed = 30    //default 1200 dont forget to change it back /////////////////////////////////////
+    var timePassed = 1200    //default 1200 dont forget to change it back /////////////////////////////////////
     /************************/
     var notificationNotRequired = false     //if in app dont need notification
     var twentyMinutesPassed = true
